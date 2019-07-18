@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterWindow</class>
+ <widget class="QWidget" name="RegisterWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>289</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>289</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RegisterWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget{
+	border-image: url(:/MBRClient/Resources/image/register/register_bg.png);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QLabel,QLineEdit{
+font-family:&quot;微软雅黑&quot;;
+}
+#btn_close{
+	border-image: url(:/MBRClient/Resources/image/close.png);
+}
+#btn_close:hover{
+	border-image: url(:/MBRClient/Resources/image/close_hover.png);
+}
+#btn_close:pressed{
+	border-image: url(:/MBRClient/Resources/image/close_pressed.png);
+}
+#btn_settings{
+	border-image: url(:/MBRClient/Resources/image/setsv.png);
+}
+#btn_settings:hover{
+	border-image: url(:/MBRClient/Resources/image/setsv_hover.png);
+}
+#btn_settings:pressed{
+	border-image: url(:/MBRClient/Resources/image/setsv_pressed.png);
+}
+#btn_confirm{
+	border-image: url(:/MBRClient/Resources/image/register/register_cfm.png);
+}
+#btn_confirm:hover{
+	border-image: url(:/MBRClient/Resources/image/register/register_cfm_hover.png);
+}
+#btn_confirm:pressed{
+	border-image: url(:/MBRClient/Resources/image/register/register_cfm_pressed.png);
+}
+#btn_confirm:disabled{
+	border-image: url(:/MBRClient/Resources/image/register/register_cfm_disabled.png);
+}
+#btn_cancel{
+	border-image: url(:/MBRClient/Resources/image/register/register_cn.png);
+}
+#btn_cancel:hover{
+	border-image: url(:/MBRClient/Resources/image/register/register_cn_hover.png);
+}
+#btn_cancel:pressed{
+	border-image: url(:/MBRClient/Resources/image/register/register_cn_pressed.png);
+}
+#btn_cancel:disabled{
+	border-image: url(:/MBRClient/Resources/image/register/register_cn_disabled.png);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item alignment="Qt::AlignTop">
+         <widget class="QPushButton" name="btn_settings">
+          <property name="minimumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>设置</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_close">
+          <property name="minimumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>关闭</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>50</number>
+        </property>
+        <property name="topMargin">
+         <number>60</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbl_authPrompt">
+          <property name="styleSheet">
+           <string notr="true">font-size:17px;
+color:red;</string>
+          </property>
+          <property name="text">
+           <string>对不起，您的机器没有授权，请连接服务器注册</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_contactPrompt">
+          <property name="styleSheet">
+           <string notr="true">font-size:13px;
+color:gray;</string>
+          </property>
+          <property name="text">
+           <string>授权码相关问题请咨询 400-900-4889</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>50</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>65</number>
+        </property>
+        <property name="bottomMargin">
+         <number>55</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbl_authCode">
+          <property name="styleSheet">
+           <string notr="true">font-size:17px;</string>
+          </property>
+          <property name="text">
+           <string>注册码：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lEdit_authCode">
+          <property name="minimumSize">
+           <size>
+            <width>260</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>260</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:17px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>220</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btn_confirm">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_cancel">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>8</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>

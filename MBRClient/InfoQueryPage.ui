@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoQueryPage</class>
+ <widget class="QWidget" name="InfoQueryPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>InfoQueryPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#wgt_left{
+	background:#E2F0FE;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="wgt_left" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>160</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>160</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#lbl_navigationHead{
+	border-image: url(:/MBRClient/Resources/image/query/query_head.png);
+}
+#btn_queryHis{
+	border-image: url(:/MBRClient/Resources/image/query/query_his.png);
+}
+#btn_queryHis:hover{
+	border-image: url(:/MBRClient/Resources/image/query/query_his_hover.png);
+}
+#btn_queryHis:checked{
+	border-image: url(:/MBRClient/Resources/image/query/query_his_pressed.png);
+}
+#btn_queryEst{
+	border-image: url(:/MBRClient/Resources/image/query/query_est.png);
+}
+#btn_queryEst:hover{
+	border-image: url(:/MBRClient/Resources/image/query/query_est_hover.png);
+}
+#btn_queryEst:checked{
+	border-image: url(:/MBRClient/Resources/image/query/query_est_pressed.png);
+}
+#btn_queryAuth{
+	border-image: url(:/MBRClient/Resources/image/query/query_auth.png);
+}
+#btn_queryAuth:hover{
+	border-image: url(:/MBRClient/Resources/image/query/query_auth_hover.png);
+}
+#btn_queryAuth:checked{
+	border-image: url(:/MBRClient/Resources/image/query/query_auth_pressed.png);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lbl_navigationHead">
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_queryHis">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_queryEst">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_queryAuth">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>49</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>342</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="wgt_right">
+     <widget class="RecordQueryPage" name="page_recordQuery"/>
+     <widget class="ModelInfoQueryPage" name="page_modelInfoQuery"/>
+     <widget class="RecogInfoQueryPage" name="page_recogInfoQuery"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RecordQueryPage</class>
+   <extends>QWidget</extends>
+   <header>RecordQueryPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModelInfoQueryPage</class>
+   <extends>QWidget</extends>
+   <header>ModelInfoQueryPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RecogInfoQueryPage</class>
+   <extends>QWidget</extends>
+   <header>RecogInfoQueryPage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>

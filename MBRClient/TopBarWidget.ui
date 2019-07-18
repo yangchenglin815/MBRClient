@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TopBarWidget</class>
+ <widget class="QWidget" name="TopBarWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>116</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TopBarWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel{
+font-family:&quot;微软雅黑&quot;;
+font-size:13px;
+color:&quot;#AAD2FF&quot;;
+}
+#lbl_logo{
+	border-image: url(:/MBRClient/Resources/image/logo_little.png);
+}
+#btn_min{
+	border-image: url(:/MBRClient/Resources/image/min.png);
+}
+#btn_min:hover{ 
+	border-image: url(:/MBRClient/Resources/image/min_hover.png);
+}
+#btn_min:pressed{
+	border-image: url(:/MBRClient/Resources/image/min_pressed.png);
+}
+#btn_close{
+	border-image: url(:/MBRClient/Resources/image/close.png);
+}
+#btn_close:hover{
+	border-image: url(:/MBRClient/Resources/image/close_hover.png);
+}
+#btn_close:pressed{
+	border-image: url(:/MBRClient/Resources/image/close_pressed.png);
+}
+#btn_identify{
+	border-image: url(:/MBRClient/Resources/image/tool_gather.png);
+}
+#btn_identify:hover{	
+	border-image: url(:/MBRClient/Resources/image/tool_gather_hover.png);
+}
+#btn_identify:checked{
+	border-image: url(:/MBRClient/Resources/image/tool_gather_pressed.png);
+}
+#btn_queryInfo{
+	border-image: url(:/MBRClient/Resources/image/tool_xxcx.png);
+}
+#btn_queryInfo:hover{
+	border-image: url(:/MBRClient/Resources/image/tool_xxcx_hover.png);
+}
+#btn_queryInfo:checked{
+	border-image: url(:/MBRClient/Resources/image/tool_xxcx_pressed.png);
+}
+#btn_sysSettings{
+	border-image: url(:/MBRClient/Resources/image/tool_xtsz.png);
+}
+#btn_sysSettings:hover{
+	border-image: url(:/MBRClient/Resources/image/tool_xtsz_hover.png);
+}
+#btn_sysSettings:checked{
+	border-image: url(:/MBRClient/Resources/image/tool_xtsz_pressed.png);
+}
+#btn_help{
+	border-image: url(:/MBRClient/Resources/image/tool_bz.png);
+}
+#btn_help:hover{
+	border-image: url(:/MBRClient/Resources/image/tool_bz_hover.png);
+}
+#btn_help:checked{
+	border-image: url(:/MBRClient/Resources/image/tool_bz_pressed.png);
+}
+#lbl_seprate{
+	border-image: url(:/MBRClient/Resources/image/title_seprate.png);
+}
+#lbl_aeyeLogo{
+	border-image: url(:/MBRClient/Resources/image/title_logo.png);
+}
+#lbl_header{
+	border-image: url(:/MBRClient/Resources/image/set/header.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="lbl_logo">
+       <property name="minimumSize">
+        <size>
+         <width>29</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>29</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_title">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>人力资源和社会保障义务经办身份认证客户端</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_min">
+       <property name="minimumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_close">
+       <property name="minimumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btn_identify">
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_queryInfo">
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_sysSettings">
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_help">
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>95</width>
+         <height>88</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>30</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_seprate">
+       <property name="minimumSize">
+        <size>
+         <width>2</width>
+         <height>54</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2</width>
+         <height>54</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>29</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_header">
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>当前状态：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">color: #a0a19e;</string>
+           </property>
+           <property name="text">
+            <string>[离线]</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>已建模人数</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);
+border-radius:6px;</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>已认证人数</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);
+border-radius:6px;</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_aeyeLogo">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>140</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>

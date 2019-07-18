@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MBRClientClass</class>
+ <widget class="QMainWindow" name="MBRClientClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MBRClient</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">#centralWidget{
+border-image: url(:/MBRClient/Resources/image/bg.png);
+}
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="TopBarWidget" name="wgt_topBar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>110</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>110</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="AuthentificationPage" name="page_authentify"/>
+      <widget class="InfoQueryPage" name="page_queryInfo"/>
+      <widget class="SystemSettingsPage" name="page_sysSettings"/>
+      <widget class="HelpPage" name="page_help"/>
+     </widget>
+    </item>
+    <item>
+     <widget class="StatusBarWidget" name="wgt_statusBar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>42</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>StatusBarWidget</class>
+   <extends>QWidget</extends>
+   <header>StatusBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TopBarWidget</class>
+   <extends>QWidget</extends>
+   <header>TopBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AuthentificationPage</class>
+   <extends>QWidget</extends>
+   <header>AuthentificationPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>InfoQueryPage</class>
+   <extends>QWidget</extends>
+   <header>InfoQueryPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SystemSettingsPage</class>
+   <extends>QWidget</extends>
+   <header>SystemSettingsPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HelpPage</class>
+   <extends>QWidget</extends>
+   <header>HelpPage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>

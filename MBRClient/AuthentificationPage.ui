@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthentificationPage</class>
+ <widget class="QWidget" name="AuthentificationPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuthentificationPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#wgt_top{
+	border-image: url(:/MBRClient/Resources/image/yhxxbj.png);
+}
+#btn_readIdCard{
+	border-image: url(:/MBRClient/Resources/image/gather/q_ssz.png);
+}
+#btn_readIdCard:hover{
+	border-image: url(:/MBRClient/Resources/image/gather/q_ssz_hover.png);
+}
+#btn_readIdCard:pressed{
+	border-image: url(:/MBRClient/Resources/image/gather/q_ssz_pressed.png);
+}
+#btn_readIdCard:disabled{
+	border-image: url(:/MBRClient/Resources/image/gather/q_ssz_disabled.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="wgt_top" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font-family:&quot;微软雅黑&quot;;
+font-size:13px;
+}
+#btn_query{
+	border-image: url(:/MBRClient/Resources/image/gather/qq.png);
+}
+#btn_query:hover{
+	border-image: url(:/MBRClient/Resources/image/gather/qq_hover.png);
+}
+#btn_query:pressed{
+	border-image: url(:/MBRClient/Resources/image/gather/qq_pressed.png);
+}
+#btn_query:disabled{
+	border-image: url(:/MBRClient/Resources/image/gather/qq_disabled.png);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_readIdCard">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_certficateType">
+        <property name="text">
+         <string>证件类型：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="combox_certificateType">
+        <property name="minimumSize">
+         <size>
+          <width>155</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>155</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_name">
+        <property name="text">
+         <string>姓名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lEdit_name">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_certificateNumber">
+        <property name="text">
+         <string>证件号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lEdit_certificateNumber">
+        <property name="minimumSize">
+         <size>
+          <width>155</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>155</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_query">
+        <property name="minimumSize">
+         <size>
+          <width>54</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>54</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>7</number>
+     </property>
+     <widget class="QWidget" name="page_authInitial">
+      <property name="styleSheet">
+       <string notr="true">#lbl_picture{
+	border-image: url(:/MBRClient/Resources/image/ts.png);
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>182</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_picture">
+         <property name="minimumSize">
+          <size>
+           <width>541</width>
+           <height>346</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>541</width>
+           <height>346</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>181</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="CreatePersonInfoPage" name="page_createPersonInfo"/>
+     <widget class="AuthModeSelectionPage" name="page_authModeSelection"/>
+     <widget class="FaceBusinessPage" name="page_faceBusiness"/>
+     <widget class="VeinBusinessPage" name="page_veinBusiness"/>
+     <widget class="FingerBusinessPage" name="page_fingerBusiness"/>
+     <widget class="CollectionResultPage" name="page_collectionResult"/>
+     <widget class="RecogResultPage" name="page_recogResult"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CreatePersonInfoPage</class>
+   <extends>QWidget</extends>
+   <header>CreatePersonInfoPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AuthModeSelectionPage</class>
+   <extends>QWidget</extends>
+   <header>AuthModeSelectionPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FaceBusinessPage</class>
+   <extends>QWidget</extends>
+   <header>FaceBusinessPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VeinBusinessPage</class>
+   <extends>QWidget</extends>
+   <header>VeinBusinessPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FingerBusinessPage</class>
+   <extends>QWidget</extends>
+   <header>FingerBusinessPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CollectionResultPage</class>
+   <extends>QWidget</extends>
+   <header>CollectionResultPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RecogResultPage</class>
+   <extends>QWidget</extends>
+   <header>RecogResultPage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>
