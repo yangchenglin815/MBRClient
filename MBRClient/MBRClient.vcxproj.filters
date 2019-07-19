@@ -33,6 +33,60 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Header Files\Authentification">
+      <UniqueIdentifier>{b018e101-db66-4990-80b2-322bf027565f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{6596cca6-7741-42a2-93cd-2a62f3808fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Help">
+      <UniqueIdentifier>{29af5734-e1f6-42df-8ddc-0a191854558c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QueryInfo">
+      <UniqueIdentifier>{ddf1568b-f3b4-4ccb-b5b2-02540583188a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SystemSettings">
+      <UniqueIdentifier>{294ef9fd-1649-4db4-9038-e6388a601c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Window">
+      <UniqueIdentifier>{172327ec-bdab-4c5b-9cd3-6e48344b8d54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Authentification">
+      <UniqueIdentifier>{7f311434-e54c-446b-9ee7-f690119ffbf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{b9b26d27-c15b-494b-a5c5-4ba366f4357f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Help">
+      <UniqueIdentifier>{77958dee-a01b-4649-b36f-c3d9f788ee03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Window">
+      <UniqueIdentifier>{0ad478e6-c2dc-45e3-a2e9-21a7811da5e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemSettings">
+      <UniqueIdentifier>{e4fde8d0-6d4b-4dc5-b9cd-fb8ec58d249b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QueryInfo">
+      <UniqueIdentifier>{b12a35c9-2eed-4a82-a418-3e40ae860581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Authentification">
+      <UniqueIdentifier>{c7ebd5ff-f8e8-4b89-ae1b-682e20b2768e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Common">
+      <UniqueIdentifier>{3b3c2de3-8453-4cdb-9cc9-a6922d38421b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Help">
+      <UniqueIdentifier>{796802ba-6c93-4535-ba49-8c668916c9f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Window">
+      <UniqueIdentifier>{4bc9bcd0-bdd0-4b02-8a7b-f4be739eaec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\SystemSettings">
+      <UniqueIdentifier>{e4bc69bf-2bf2-4fd0-a3c0-9012ec956a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\QueryInfo">
+      <UniqueIdentifier>{3009c4db-538a-4620-b056-fc58ca4c7e9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -68,161 +122,11 @@
     <ClCompile Include="GeneratedFiles\Release\moc_StatusBarWidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="AuthentificationPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_AuthentificationPage.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConfigWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_AuthentificationPage.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_ConfigWindow.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="CreatePersonInfoPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_CreatePersonInfoPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_CreatePersonInfoPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="AuthModeSelectionPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_AuthModeSelectionPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_AuthModeSelectionPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="BioTypeWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_BioTypeWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_BioTypeWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="FaceBusinessPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FaceBusinessPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FaceBusinessPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="VeinBusinessPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_VeinBusinessPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_VeinBusinessPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="FingerBusinessPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FingerBusinessPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FingerBusinessPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="CollectionResultPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_CollectionResultPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_CollectionResultPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="RecogResultPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_RecogResultPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_RecogResultPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="InfoQueryPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_InfoQueryPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_InfoQueryPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="RecordQueryPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_RecordQueryPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_RecordQueryPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="PictureShowWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_PictureShowWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_PictureShowWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelInfoQueryPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_ModelInfoQueryPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_ModelInfoQueryPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="RecogInfoQueryPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_RecogInfoQueryPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_RecogInfoQueryPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="SystemSettingsPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_SystemSettingsPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_SystemSettingsPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="ModifyPasswdPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_ModifyPasswdPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_ModifyPasswdPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="HelpPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_HelpPage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_HelpPage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="LoadingWindow.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_LoadingWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -230,53 +134,11 @@
     <ClCompile Include="GeneratedFiles\Release\moc_LoadingWindow.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="ProgressIndicator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_ProgressIndicator.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_ProgressIndicator.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="LoginWindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_LoginWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_LoginWindow.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigWindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_ConfigWindow.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_ConfigWindow.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="IpAddressPartWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_IpAddressPartWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_IpAddressPartWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="IpAddressWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_IpAddressWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_IpAddressWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="RegisterWindow.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_RegisterWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -284,8 +146,47 @@
     <ClCompile Include="GeneratedFiles\Release\moc_RegisterWindow.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="BaseDialog.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ModifyPasswdPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ModifyPasswdPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SystemSettingsPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SystemSettingsPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_InfoQueryPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_InfoQueryPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ModelInfoQueryPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ModelInfoQueryPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RecogInfoQueryPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RecogInfoQueryPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RecordQueryPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RecordQueryPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HelpPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HelpPage.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_BaseDialog.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -293,8 +194,29 @@
     <ClCompile Include="GeneratedFiles\Release\moc_BaseDialog.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="LoadingWidget.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BioTypeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BioTypeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FramelessHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FramelessHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IpAddressPartWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IpAddressPartWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IpAddressWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IpAddressWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_LoadingWidget.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -302,14 +224,146 @@
     <ClCompile Include="GeneratedFiles\Release\moc_LoadingWidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="FramelessHelper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_FramelessHelper.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_PictureShowWidget.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_FramelessHelper.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_PictureShowWidget.cpp">
       <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ProgressIndicator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProgressIndicator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AuthentificationPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AuthentificationPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AuthModeSelectionPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AuthModeSelectionPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CollectionResultPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CollectionResultPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CreatePersonInfoPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CreatePersonInfoPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FaceBusinessPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FaceBusinessPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FingerBusinessPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FingerBusinessPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RecogResultPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RecogResultPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VeinBusinessPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VeinBusinessPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\AuthentificationPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\AuthModeSelectionPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\CollectionResultPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\CreatePersonInfoPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\FaceBusinessPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\FingerBusinessPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\RecogResultPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Authentification\VeinBusinessPage.cpp">
+      <Filter>Source Files\Authentification</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BaseDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BioTypeWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\FramelessHelper.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IpAddressPartWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\IpAddressWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\LoadingWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PictureShowWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ProgressIndicator.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\HelpPage.cpp">
+      <Filter>Source Files\Help</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryInfo\InfoQueryPage.cpp">
+      <Filter>Source Files\QueryInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryInfo\ModelInfoQueryPage.cpp">
+      <Filter>Source Files\QueryInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryInfo\RecogInfoQueryPage.cpp">
+      <Filter>Source Files\QueryInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryInfo\RecordQueryPage.cpp">
+      <Filter>Source Files\QueryInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSettings\ModifyPasswdPage.cpp">
+      <Filter>Source Files\SystemSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSettings\SystemSettingsPage.cpp">
+      <Filter>Source Files\SystemSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\ConfigWindow.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\LoadingWindow.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\LoginWindow.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\RegisterWindow.cpp">
+      <Filter>Source Files\Window</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -334,146 +388,146 @@
     <CustomBuild Include="StatusBarWidget.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="AuthentificationPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Window\ConfigWindow.h">
+      <Filter>Header Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="AuthentificationPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Window\LoadingWindow.h">
+      <Filter>Header Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="CreatePersonInfoPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Window\LoginWindow.h">
+      <Filter>Header Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="CreatePersonInfoPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Window\RegisterWindow.h">
+      <Filter>Header Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="AuthModeSelectionPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="SystemSettings\ModifyPasswdPage.h">
+      <Filter>Header Files\SystemSettings</Filter>
     </CustomBuild>
-    <CustomBuild Include="AuthModeSelectionPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="SystemSettings\SystemSettingsPage.h">
+      <Filter>Header Files\SystemSettings</Filter>
     </CustomBuild>
-    <CustomBuild Include="BioTypeWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="QueryInfo\InfoQueryPage.h">
+      <Filter>Header Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="BioTypeWidget.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="QueryInfo\ModelInfoQueryPage.h">
+      <Filter>Header Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="FaceBusinessPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="QueryInfo\RecogInfoQueryPage.h">
+      <Filter>Header Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="FaceBusinessPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="QueryInfo\RecordQueryPage.h">
+      <Filter>Header Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="VeinBusinessPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Help\HelpPage.h">
+      <Filter>Header Files\Help</Filter>
     </CustomBuild>
-    <CustomBuild Include="VeinBusinessPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Common\BaseDialog.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="FingerBusinessPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Common\BioTypeWidget.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="FingerBusinessPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Common\FramelessHelper.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="CollectionResultPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Common\IpAddressPartWidget.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="CollectionResultPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Common\IpAddressWidget.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecogResultPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Common\LoadingWidget.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecogResultPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Common\PictureShowWidget.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="InfoQueryPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Common\ProgressIndicator.h">
+      <Filter>Header Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="InfoQueryPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\AuthentificationPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecordQueryPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\AuthModeSelectionPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecordQueryPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\CollectionResultPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="PictureShowWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\CreatePersonInfoPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="PictureShowWidget.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\FaceBusinessPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="ModelInfoQueryPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\FingerBusinessPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="ModelInfoQueryPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\RecogResultPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecogInfoQueryPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\VeinBusinessPage.h">
+      <Filter>Header Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RecogInfoQueryPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Window\ConfigWindow.ui">
+      <Filter>Form Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="SystemSettingsPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Window\LoginWindow.ui">
+      <Filter>Form Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="SystemSettingsPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Window\RegisterWindow.ui">
+      <Filter>Form Files\Window</Filter>
     </CustomBuild>
-    <CustomBuild Include="ModifyPasswdPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="SystemSettings\ModifyPasswdPage.ui">
+      <Filter>Form Files\SystemSettings</Filter>
     </CustomBuild>
-    <CustomBuild Include="ModifyPasswdPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="SystemSettings\SystemSettingsPage.ui">
+      <Filter>Form Files\SystemSettings</Filter>
     </CustomBuild>
-    <CustomBuild Include="HelpPage.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="QueryInfo\InfoQueryPage.ui">
+      <Filter>Form Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="HelpPage.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="QueryInfo\ModelInfoQueryPage.ui">
+      <Filter>Form Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="LoadingWindow.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="QueryInfo\RecogInfoQueryPage.ui">
+      <Filter>Form Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="ProgressIndicator.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="QueryInfo\RecordQueryPage.ui">
+      <Filter>Form Files\QueryInfo</Filter>
     </CustomBuild>
-    <CustomBuild Include="LoginWindow.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Help\HelpPage.ui">
+      <Filter>Form Files\Help</Filter>
     </CustomBuild>
-    <CustomBuild Include="LoginWindow.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Common\BioTypeWidget.ui">
+      <Filter>Form Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="ConfigWindow.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Common\PictureShowWidget.ui">
+      <Filter>Form Files\Common</Filter>
     </CustomBuild>
-    <CustomBuild Include="ConfigWindow.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\AuthentificationPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="IpAddressPartWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\AuthModeSelectionPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="IpAddressWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\CollectionResultPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RegisterWindow.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\CreatePersonInfoPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="RegisterWindow.ui">
-      <Filter>Form Files</Filter>
+    <CustomBuild Include="Authentification\FaceBusinessPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="BaseDialog.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\FingerBusinessPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="LoadingWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\RecogResultPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
-    <CustomBuild Include="FramelessHelper.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="Authentification\VeinBusinessPage.ui">
+      <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -486,40 +540,22 @@
     <ClInclude Include="GeneratedFiles\ui_StatusBarWidget.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_AuthentificationPage.h">
+    <ClInclude Include="GeneratedFiles\ui_ConfigWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_CreatePersonInfoPage.h">
+    <ClInclude Include="GeneratedFiles\ui_LoginWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_AuthModeSelectionPage.h">
+    <ClInclude Include="GeneratedFiles\ui_RegisterWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_BioTypeWidget.h">
+    <ClInclude Include="GeneratedFiles\ui_ModifyPasswdPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_FaceBusinessPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_VeinBusinessPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_FingerBusinessPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_CollectionResultPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_RecogResultPage.h">
+    <ClInclude Include="GeneratedFiles\ui_SystemSettingsPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_InfoQueryPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_RecordQueryPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_PictureShowWidget.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_ModelInfoQueryPage.h">
@@ -528,22 +564,40 @@
     <ClInclude Include="GeneratedFiles\ui_RecogInfoQueryPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_SystemSettingsPage.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_ModifyPasswdPage.h">
+    <ClInclude Include="GeneratedFiles\ui_RecordQueryPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_HelpPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_LoginWindow.h">
+    <ClInclude Include="GeneratedFiles\ui_BioTypeWidget.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_ConfigWindow.h">
+    <ClInclude Include="GeneratedFiles\ui_PictureShowWidget.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_RegisterWindow.h">
+    <ClInclude Include="GeneratedFiles\ui_AuthentificationPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_AuthModeSelectionPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CollectionResultPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CreatePersonInfoPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FaceBusinessPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FingerBusinessPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RecogResultPage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_VeinBusinessPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
