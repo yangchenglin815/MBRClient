@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthModeSelectionPage</class>
+ <widget class="QWidget" name="AuthModeSelectionPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuthModeSelectionPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#btn_return{
+	border-image: url(:/MBRClient/Resources/image/gather/retry.png);
+}
+#btn_return:hover{
+	border-image: url(:/MBRClient/Resources/image/gather/retry_hover.png);
+}
+#btn_return:pressed{
+	border-image: url(:/MBRClient/Resources/image/gather/retry_pressed.png);
+}
+#btn_return:disabled{
+	border-image: url(:/MBRClient/Resources/image/gather/retry_disabled.png);
+}
+#btn_oneKeyCollect{
+	border-image: url(:/MBRClient/Resources/image/gather/qcj.png);
+}
+#btn_oneKeyCollect:hover{
+	border-image: url(:/MBRClient/Resources/image/gather/qcj_hover.png);
+}
+#btn_oneKeyCollect:pressed{
+	border-image: url(:/MBRClient/Resources/image/gather/qcj_pressed.png);
+}
+#btn_oneKeyCollect:disabled{
+	border-image: url(:/MBRClient/Resources/image/gather/qcj_disabled.png);
+}
+#btn_gotoRecognize{
+	border-image: url(:/MBRClient/Resources/image/gather/qrz.png);
+}
+#btn_gotoRecognize:hover{
+	border-image: url(:/MBRClient/Resources/image/gather/qrz_hover.png);
+}
+#btn_gotoRecognize:pressed{
+	border-image: url(:/MBRClient/Resources/image/gather/qrz_pressed.png);
+}
+#btn_gotoRecognize:disabled{
+	border-image: url(:/MBRClient/Resources/image/gather/qrz_disabled.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>60</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>85</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>80</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="BioTypeWidget" name="wgt_faceBioType" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>154</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="BioTypeWidget" name="wgt_veinBioType" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>154</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="BioTypeWidget" name="wgt_fingerBioType" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>154</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_return">
+       <property name="minimumSize">
+        <size>
+         <width>98</width>
+         <height>47</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>98</width>
+         <height>47</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_oneKeyCollect">
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_gotoRecognize">
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>77</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BioTypeWidget</class>
+   <extends>QWidget</extends>
+   <header>BioTypeWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MBRClient.qrc"/>
+ </resources>
+ <connections/>
+</ui>
