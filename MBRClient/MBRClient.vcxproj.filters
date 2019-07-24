@@ -87,6 +87,27 @@
     <Filter Include="Form Files\QueryInfo">
       <UniqueIdentifier>{3009c4db-538a-4620-b056-fc58ca4c7e9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{21d326ae-18bd-4ae4-84e8-f6f0086f8395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{ec1518db-e986-4689-9d7a-aa28f10bba83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{8207972a-4cf5-427b-8ded-ed75a36448ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Business">
+      <UniqueIdentifier>{d0975dd3-1cd6-49de-a56b-4bb7b7b4b1f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{0ec84da1-62bd-42a4-a077-3bd1d736a3a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{78f5e248-eba7-4be8-b427-684974317a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalService">
+      <UniqueIdentifier>{9bf7455b-4627-48c7-a913-0c986546585e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -365,6 +386,54 @@
     <ClCompile Include="Window\RegisterWindow.cpp">
       <Filter>Source Files\Window</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\common.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\AppManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AppManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AppManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AEyeLog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AEyeLog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\AEyeLog.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LocalServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LocalServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalService\LocalServer.cpp">
+      <Filter>LocalService</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LocalClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LocalClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalService\LocalClient.cpp">
+      <Filter>LocalService</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SingleProcessHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SingleProcessHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalService\SingleProcessHelper.cpp">
+      <Filter>LocalService</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MBRClient.h">
@@ -529,6 +598,21 @@
     <CustomBuild Include="Authentification\VeinBusinessPage.ui">
       <Filter>Form Files\Authentification</Filter>
     </CustomBuild>
+    <CustomBuild Include="Utils\AppManager.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Log\AEyeLog.h">
+      <Filter>Log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LocalService\LocalServer.h">
+      <Filter>LocalService</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LocalService\LocalClient.h">
+      <Filter>LocalService</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LocalService\SingleProcessHelper.h">
+      <Filter>LocalService</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MBRClient.h">
@@ -599,6 +683,9 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_VeinBusinessPage.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\common.h">
+      <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
