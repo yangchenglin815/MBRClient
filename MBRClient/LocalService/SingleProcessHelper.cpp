@@ -1,7 +1,7 @@
 #include "SingleProcessHelper.h"
 #include "LocalServer.h"
 #include "LocalClient.h"
-#include "AEyeLog.h"
+#include "DefineData.h"
 
 #include <QByteArray>
 #include <QThread>
@@ -48,7 +48,7 @@ SingleProcessHelper::SingleProcessHelper( const QString &serverName, const QStri
 #else
 	m_processId = QString::number(getPid());
 #endif
-	AEyeLog::instance()->writeDebugLog(QString("Get current process id=<%1>, holder=<%2>").arg(m_processId).arg(m_holder));
+	LOG_INFO(QString("Get current process id=<%1>, holder=<%2>").arg(m_processId).arg(m_holder));
 }
 
 SingleProcessHelper::~SingleProcessHelper()
@@ -80,7 +80,7 @@ void SingleProcessHelper::sendArguments( const QString &strName )
 		foreach (QString var, argList) {
 			dataStr.append(",").append(var);
 		}
-		AEyeLog::instance()->writeDebugLog(QString("Send arguments=<%1>").arg(dataStr));
+		LOG_INFO(QString("Send arguments=<%1>").arg(dataStr));
 
 		if (!client.write(dataStr.toLocal8Bit())) {
 			break;
@@ -180,7 +180,7 @@ bool SingleProcessHelper::killRemote( const QString &strName )
 			for (int i = 0; i < 15; ++i) {
 				SleeperThead::msleep(1000);
 				if (!hasRemote(strName, holder)) {
-					AEyeLog::instance()->writeDebugLog(QString("Kill %1 success").arg(strName));
+					LOG_INFO(QString("Kill %1 success").arg(strName));
 					return true;
 				}
 			}
@@ -203,14 +203,14 @@ bool SingleProcessHelper::killRemote( const QString &strName )
 			for (int i = 0; i < 3; i++) {
 				SleeperThead::msleep(1000);
 				if (!hasRemote(strName, holder)) {
-					AEyeLog::instance()->writeDebugLog(QString("Kill %1 success").arg(strName));
+					LOG_INFO(QString("Kill %1 success").arg(strName));
 					return true;
 				}
 			}
 		}
 	} while (0);
 
-	AEyeLog::instance()->writeDebugLog(QString("Kill %1 failure").arg(strName));
+	LOG_INFO(QString("Kill %1 failure").arg(strName));
 	return false;
 }
 
@@ -223,7 +223,7 @@ void SingleProcessHelper::slotOnNewConnection()
 
 	QByteArray out;
 	if (server->read(out)) {
-		AEyeLog::instance()->writeDebugLog("Server read: " + QString::fromLocal8Bit(out));
+		LOG_INFO("Server read: " + QString::fromLocal8Bit(out));
 		if (QString::fromLocal8Bit(out) == "CHECK") {
 			QByteArray resp = "CHECK_OK,";
 			if (!m_holder.isEmpty()) {
@@ -256,7 +256,7 @@ void SingleProcessHelper::slotOnNewConnection()
 #ifndef NO_GUI
 void SingleProcessHelper::activateWindow()
 {
-	AEyeLog::instance()->writeDebugLog("There is already a instance running, raising it up.");
+	LOG_INFO("There is already a instance running, raising it up.");
 	if (m_actWin) {
 		m_actWin->setWindowState(m_actWin->windowState() & ~Qt::WindowMinimized);
 		m_actWin->raise();
@@ -267,7 +267,7 @@ void SingleProcessHelper::activateWindow()
 
 void SingleProcessHelper::forceQuit()
 {
-	AEyeLog::instance()->writeDebugLog("Force quit the program.");
+	LOG_INFO("Force quit the program.");
 	ulong currentPid;
 
 #ifdef _WIN32

@@ -1,0 +1,5 @@
+VC2010下编译Firebird 2.1.x要点：
+由于Firebird 2.1.x和2.5.x不带VC2010的工程文件，所以必须做出修改
+(1)把builds\win32\msvc9\Firebird.sln，builds\win32\msvc9\FirebirdBoot.sln，extern\icu\source\allinone\allinone_9.sln转换为VC2010格式。
+(2)把extern\icu\source\allinone\firebird2release.props和extern\icu\source\allinone\firebird2release.vsprops里的nodefaultlib:msvcrt.lib去掉
+(3)根据具体版本，可能还要把msvc9替换成msvc10。

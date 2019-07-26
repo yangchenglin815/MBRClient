@@ -108,6 +108,12 @@
     <Filter Include="LocalService">
       <UniqueIdentifier>{9bf7455b-4627-48c7-a913-0c986546585e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{8f077634-aaf9-4bac-93e7-4b07793138d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\AEyeDBTable">
+      <UniqueIdentifier>{f790f1c4-a0b1-45a9-9f8a-cc3b2e4fac06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -434,6 +440,117 @@
     <ClCompile Include="LocalService\SingleProcessHelper.cpp">
       <Filter>LocalService</Filter>
     </ClCompile>
+    <ClCompile Include="Database\AEyeDBFactory.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\AEyeDB.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\AEyeDB_Firebird.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DbBaseTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DbBaseTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\DbBaseTable.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BusinessRecordTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BusinessRecordTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\AES.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Base64.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GlobalSignal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GlobalSignal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\GlobalSignal.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DataModel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DataModel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Data\DataModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RegisterDataTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RegisterDataTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CommunityManageTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CommunityManageTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CacheVersionTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CacheVersionTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SyetemConfigTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SyetemConfigTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ParameterTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ParameterTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ParamManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\BusinessRecordTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\CacheVersionTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\CommunityManageTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\ParameterTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\RegisterDataTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\SyetemConfigTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DictionaryTable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DictionaryTable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\DictionaryTable.cpp">
+      <Filter>Database\AEyeDBTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\DictionaryManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MBRClient.h">
@@ -613,6 +730,36 @@
     <CustomBuild Include="LocalService\SingleProcessHelper.h">
       <Filter>LocalService</Filter>
     </CustomBuild>
+    <CustomBuild Include="Database\DbBaseTable.h">
+      <Filter>Database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\GlobalSignal.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Data\DataModel.h">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\BusinessRecordTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\CacheVersionTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\CommunityManageTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\ParameterTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\RegisterDataTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\SyetemConfigTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Database\DictionaryTable.h">
+      <Filter>Database\AEyeDBTable</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MBRClient.h">
@@ -685,6 +832,39 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="Utils\common.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\AEyeDBFactory.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\AEyeDB.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\EnumData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\AEyeDB_Firebird.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\StructData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\AES.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Base64.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\ConstData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\DefineData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ParamManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DictionaryManager.h">
       <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>

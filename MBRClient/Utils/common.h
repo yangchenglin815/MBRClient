@@ -1,11 +1,13 @@
 #pragma once
 #include <QString>
 
-class common
+class Common
 {
 public:
 	static QString getUserDir(const QString& strName = "\\AthenaEye");
 
-	static bool runAppInSingleInstanceMode(const QString& appName = "AthenaEye");
+	static QString encryptString(QString str);
+
+	static QString decryptString(QString str);
 };
 

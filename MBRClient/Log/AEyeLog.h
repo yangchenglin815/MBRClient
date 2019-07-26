@@ -14,6 +14,7 @@ public:
 
 	void writeDebugLog(QString sDebugLog);
 	void writeErrorLog(QString sErrorLog);
+	void writeSqlLog(QString sSqlLog);
 
 private:
 	AEyeLog(QObject *parent = 0);
@@ -26,6 +27,7 @@ private:
 	QString m_sCurDate;
 	QMutex* m_pDebugMutex;
 	QMutex* m_pErrorMutex;
+	QMutex* m_pSqlMutex;
 };
 
 #endif // AEYELOG_H

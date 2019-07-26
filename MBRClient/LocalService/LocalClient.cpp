@@ -1,7 +1,7 @@
 #include "LocalClient.h"
 #include <QLocalSocket>
 #include <QByteArray>
-#include "AEyeLog.h"
+#include "DefineData.h"
 
 LocalClient::LocalClient( const QString &strName, QObject *parent /*= 0*/ )
 	: QObject(parent)
@@ -24,7 +24,7 @@ int LocalClient::connect()
 	if (!m_socket->waitForConnected(500))
 	{
 		m_socket->abort();
-		AEyeLog::instance()->writeDebugLog("Connect to server error: " + QString::number(m_socket->error()));
+		LOG_INFO("Connect to server error: " + QString::number(m_socket->error()));
 		return m_socket->error();
 	}
 
@@ -35,7 +35,7 @@ bool LocalClient::write( const QByteArray &data )
 {
 	if (m_socket->state() != QLocalSocket::ConnectedState)
 	{
-		AEyeLog::instance()->writeDebugLog("Client write error: " + QString::number(m_socket->state()));
+		LOG_INFO("Client write error: " + QString::number(m_socket->state()));
 		return false;
 	}
 

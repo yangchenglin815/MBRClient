@@ -1,10 +1,8 @@
 #include "BaseDialog.h"
-//#include "AEyeWidgetDef.h"
 #include "LoadingWidget.h"
 #include <QDesktopWidget>
 #include <QApplication>
-
-const QString CLIENT_NAME = QStringLiteral("人力资源和社会保障业务经办身份认证客户端");
+#include "ConstData.h"
 
 BaseDialog::BaseDialog(QWidget* parent/* = 0*/)
     : QDialog(parent) 

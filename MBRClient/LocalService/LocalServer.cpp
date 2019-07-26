@@ -2,7 +2,7 @@
 #include <QLocalServer>
 #include <QLocalSocket>
 #include <QByteArray>
-#include "AEyeLog.h"
+#include "DefineData.h"
 
 LocalServer::LocalServer( const QString &strName, QObject *parent /*= 0*/ )
 	: QObject(parent)
@@ -24,7 +24,7 @@ int LocalServer::listen()
 	m_server->removeServer(m_serverName);
 	if (!m_server->listen(m_serverName))
 	{
-		AEyeLog::instance()->writeDebugLog("Server listen error: " + m_server->errorString());
+		LOG_INFO("Server listen error: " + m_server->errorString());
 		return m_server->serverError();
 	}
 	return 0;

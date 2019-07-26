@@ -13,6 +13,9 @@ public:
 
 	int startup(QString command = "");
 
+public slots:
+    void onOpenDatabaseFailed();
+
 private:
 	bool checkRunningEnv();
 	int init(bool needUpdate = true);             // 0：登录；1：注册；2：无法使用
